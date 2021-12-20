@@ -7,6 +7,9 @@ enable_testing()
 find_package(Ceres REQUIRED)
 find_package(OpenCV REQUIRED)
 
+add_executable(test_ceres0 test_ceres0.cpp)
+target_link_libraries(test_ceres0 ${CERES_LIBRARIES} ${OpenCV_LIBS})
+
 add_executable(test_ceres1 test_ceres1.cpp)
 target_link_libraries(test_ceres1 ${CERES_LIBRARIES} ${OpenCV_LIBS})
 
