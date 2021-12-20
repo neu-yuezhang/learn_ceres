@@ -20,7 +20,6 @@ struct Curve_Factor
 
 int main(int, char **)
 {
-        int kk = 0;
         double a = 1.0, b = 10.0, c = 1.5;
         int N = 1000;
         double w_sigma = 1.0;
